@@ -1,0 +1,386 @@
+/**
+ * TripEase - Responsive Styles
+ * Mobile-first responsive design
+ */
+
+/* ========================================
+   TABLET (768px - 991px)
+======================================== */
+@media (max-width: 991px) {
+    /* Navigation */
+    .navbar-collapse {
+        display: none !important;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .search-input-group {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Sections */
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    /* Footer */
+    .footer-top {
+        padding: 2rem 0;
+    }
+    
+    .footer-payment {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+/* ========================================
+   MOBILE (max-width: 767px)
+======================================== */
+@media (max-width: 767px) {
+    /* Typography */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    
+    /* Hero Section */
+    .hero-section {
+        min-height: 500px;
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-search {
+        padding: 1rem;
+    }
+    
+    .btn-search {
+        width: 100%;
+    }
+    
+    /* Stats Section */
+    .stats-section {
+        padding: 2rem 0;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stat-icon {
+        font-size: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    /* Sections */
+    .featured-section {
+        padding: 2rem 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Listing Cards */
+    .listing-card {
+        margin-bottom: 1rem;
+    }
+    
+    .listing-image {
+        height: 200px;
+    }
+    
+    .listing-body {
+        padding: 1rem;
+    }
+    
+    .listing-title {
+        font-size: 1.1rem;
+    }
+    
+    .listing-price {
+        font-size: 1.1rem;
+    }
+    
+    /* How It Works */
+    .how-it-works-section {
+        padding: 2rem 0;
+    }
+    
+    .step-card {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .step-icon {
+        font-size: 2.5rem;
+    }
+    
+    /* Testimonials */
+    .testimonials-section {
+        padding: 2rem 0;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* CTA Sections */
+    .cta-section {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    .cta-title {
+        font-size: 1.75rem;
+    }
+    
+    .cta-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .provider-cta-section {
+        padding: 2rem 0;
+    }
+    
+    .provider-benefits {
+        margin: 1rem 0;
+    }
+    
+    .provider-benefits li {
+        font-size: 1rem;
+    }
+    
+    /* Footer */
+    .footer-top {
+        padding: 2rem 0;
+    }
+    
+    .footer-widget {
+        margin-bottom: 2rem;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+    }
+    
+    .footer-copyright {
+        margin-bottom: 1rem;
+    }
+    
+    /* Utilities */
+    .scroll-to-top {
+        bottom: 80px;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .alert-floating {
+        top: 70px;
+        right: 1rem;
+        left: 1rem;
+        min-width: auto;
+    }
+    
+    /* Add padding for bottom navigation */
+    .main-content {
+        padding-bottom: 70px;
+    }
+}
+
+/* ========================================
+   SMALL MOBILE (max-width: 575px)
+======================================== */
+@media (max-width: 575px) {
+    /* Container padding */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    /* Stats */
+    .stat-number {
+        font-size: 1.25rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    /* Listing Cards */
+    .listing-image {
+        height: 180px;
+    }
+    
+    .listing-badge {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .listing-rating {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    /* CTA */
+    .cta-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* ========================================
+   LANDSCAPE MOBILE (max-height: 500px)
+======================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 400px;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-search {
+        padding: 1rem;
+    }
+}
+
+/* ========================================
+   DESKTOP LARGE (min-width: 1400px)
+======================================== */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.35rem;
+    }
+    
+    .section-title {
+        font-size: 2.25rem;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+======================================== */
+@media print {
+    .navbar,
+    .top-bar,
+    .mobile-menu-overlay,
+    .bottom-nav,
+    .footer,
+    .scroll-to-top,
+    .alert-floating,
+    .btn {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: #000;
+    }
+    
+    .hero-section {
+        background: none;
+        color: #000;
+    }
+    
+    .listing-card {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        border: 2px solid currentColor;
+    }
+    
+    .listing-card {
+        border: 2px solid var(--gray-900);
+    }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+    /* This can be implemented if dark mode is desired */
+    /* Currently using light theme only as per requirements */
+}
