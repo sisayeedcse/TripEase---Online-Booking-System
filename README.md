@@ -7,13 +7,7 @@
 
 > A comprehensive web-based platform connecting travelers with local service providers for boat rentals and room accommodations. Built with PHP, MySQL, and modern web technologies.
 
-<<<<<<< HEAD
-![TripEase Banner](https://via.placeholder.com/1200x400/4A90E2/FFFFFF?text=TripEase+-+Your+Local+Travel+Companion)
-=======
 ![TripEase Banner](uploads/screenshots/TripEaseBanner.png)
->>>>>>> e3dd9e9 (Initial import of TripEase)
-
----
 
 ## 📋 Table of Contents
 
@@ -54,10 +48,11 @@
 ### For Travelers (Users)
 
 #### 🔐 Authentication & Account Management
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - User registration with email validation
 - Secure login/logout system
 - Password reset functionality
@@ -65,10 +60,11 @@
 - Session management with "Remember Me"
 
 #### 🔍 Search & Discovery
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - **Advanced Search Engine**
   - Location-based filtering
   - Category selection (Boats/Rooms)
@@ -84,10 +80,11 @@
 - Pagination for easy browsing
 
 #### 📅 Booking Management
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Real-time availability calendar
 - Instant booking confirmation
 - Booking reference tracking
@@ -96,10 +93,11 @@
 - Special requests handling
 
 #### ⭐ Reviews & Ratings
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Leave detailed reviews after trips
 - 5-star rating system
 - Edit/delete own reviews
@@ -107,10 +105,11 @@
 - Filter reviews by rating
 
 #### 🔔 Notifications
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Booking confirmations
 - Booking reminders
 - Cancellation alerts
@@ -120,20 +119,22 @@
 ### For Service Providers
 
 #### 🏢 Business Management
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Provider registration with verification
 - Business profile management
 - Multi-listing support
 - Performance analytics
 
 #### 📝 Listing Management
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Create and edit listings
 - Upload multiple images per listing
 - Set pricing and availability
@@ -141,10 +142,11 @@
 - Real-time status updates
 
 #### 📊 Dashboard & Analytics
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Booking overview
 - Revenue tracking
 - Performance metrics
@@ -152,10 +154,11 @@
 - Occupancy rates
 
 #### 💬 Communication
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Direct customer messaging
 - Booking notifications
 - Review responses
@@ -164,30 +167,33 @@
 ### For Administrators
 
 #### 👥 User Management
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - View all users and providers
 - Account activation/deactivation
 - User verification
 - Activity monitoring
 
 #### 📋 Listing Management
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Approve/reject listings
 - Monitor listing quality
 - Enforce platform policies
 - Featured listing selection
 
 #### 📊 System Analytics
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Platform-wide statistics
 - Revenue reports
 - User engagement metrics
@@ -195,10 +201,11 @@
 - Performance dashboards
 
 #### ⚙️ Platform Settings
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Site configuration
 - Email templates
 - Payment settings
@@ -210,20 +217,22 @@
 ## 🛠 Technology Stack
 
 ### Backend
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - **PHP 7.4+** - Server-side scripting
 - **MySQL 5.7+** - Relational database
 - **PDO** - Database abstraction layer
 - **Apache** - Web server (XAMPP)
 
 ### Frontend
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling with custom properties
 - **Bootstrap 5.3** - Responsive framework
@@ -231,20 +240,22 @@
 - **Font Awesome 6** - Icon library
 
 ### Architecture Patterns
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - **MVC-inspired** - Separation of concerns
 - **Query Builder** - Fluent database interface
 - **Singleton Pattern** - Database connection
 - **Helper Functions** - Reusable utilities
 
 ### Security
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - **bcrypt** - Password hashing
 - **Prepared Statements** - SQL injection prevention
 - **Input Sanitization** - XSS protection
@@ -334,75 +345,81 @@ TripEase/
 ### Step-by-Step Installation
 
 1. **Clone the Repository**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   ```bash
-   git clone https://github.com/yourusername/tripease.git
-   cd tripease
-   ```
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+```bash
+git clone https://github.com/yourusername/tripease.git
+cd tripease
+```
 
 2. **Move to XAMPP Directory**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   ```bash
-   # Windows
-   move tripease C:\xampp\htdocs\
+> > > > > > > e3dd9e9 (Initial import of TripEase)
 
-   # Linux/Mac
-   sudo mv tripease /opt/lampp/htdocs/
-   ```
+```bash
+# Windows
+move tripease C:\xampp\htdocs\
+
+# Linux/Mac
+sudo mv tripease /opt/lampp/htdocs/
+```
 
 3. **Start XAMPP Services**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Open XAMPP Control Panel
-   - Start **Apache** and **MySQL** services
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Open XAMPP Control Panel
+- Start **Apache** and **MySQL** services
 
 4. **Create Database**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Open phpMyAdmin: `http://localhost/phpmyadmin`
-   - Click "New" to create a database
-   - Import the schema:
-     - Click "Import" tab
-     - Choose file: `database/schema.sql`
-     - Click "Go"
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Open phpMyAdmin: `http://localhost/phpmyadmin`
+- Click "New" to create a database
+- Import the schema:
+  - Click "Import" tab
+  - Choose file: `database/schema.sql`
+  - Click "Go"
 
 5. **Configure Application**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Open `config/config.php`
-   - Update database credentials if needed:
-     ```php
-     define('DB_HOST', 'localhost');
-     define('DB_USER', 'root');
-     define('DB_PASS', '');
-     define('DB_NAME', 'tripease');
-     ```
-   - Update base URL:
-     ```php
-     define('APP_URL', 'http://localhost/TripEase');
-     ```
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Open `config/config.php`
+- Update database credentials if needed:
+  ```php
+  define('DB_HOST', 'localhost');
+  define('DB_USER', 'root');
+  define('DB_PASS', '');
+  define('DB_NAME', 'tripease');
+  ```
+- Update base URL:
+  ```php
+  define('APP_URL', 'http://localhost/TripEase');
+  ```
 
 6. **Set Permissions** (Linux/Mac only)
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   ```bash
-   chmod -R 755 /opt/lampp/htdocs/tripease
-   chmod -R 777 /opt/lampp/htdocs/tripease/uploads
-   ```
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+```bash
+chmod -R 755 /opt/lampp/htdocs/tripease
+chmod -R 777 /opt/lampp/htdocs/tripease/uploads
+```
 
 7. **Access the Application**
    - Homepage: `http://localhost/TripEase`
@@ -415,7 +432,8 @@ TripEase/
 <<<<<<< HEAD
 =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - Email: `admin@tripease.com`
 - Password: `password`
 
@@ -486,33 +504,36 @@ Options -Indexes
 ### For Travelers
 
 1. **Register an Account**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Click "Sign Up" on the homepage
-   - Fill in your details
-   - Verify your email (if enabled)
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Click "Sign Up" on the homepage
+- Fill in your details
+- Verify your email (if enabled)
 
 2. **Search for Listings**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Use the search bar on homepage
-   - Apply filters (location, category, price, date)
-   - Browse featured and top-rated listings
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Use the search bar on homepage
+- Apply filters (location, category, price, date)
+- Browse featured and top-rated listings
 
 3. **Make a Booking**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Click on a listing to view details
-   - Select your dates
-   - Review pricing and amenities
-   - Confirm booking
-   - Receive booking reference
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Click on a listing to view details
+- Select your dates
+- Review pricing and amenities
+- Confirm booking
+- Receive booking reference
 
 4. **Manage Bookings**
    - Access your dashboard
@@ -523,24 +544,26 @@ Options -Indexes
 ### For Service Providers
 
 1. **Register as Provider**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Navigate to Provider Registration
-   - Fill in business details
-   - Wait for admin verification
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Navigate to Provider Registration
+- Fill in business details
+- Wait for admin verification
 
 2. **Create Listings**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Access provider dashboard
-   - Click "Add New Listing"
-   - Upload images and details
-   - Set pricing and availability
-   - Submit for approval
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Access provider dashboard
+- Click "Add New Listing"
+- Upload images and details
+- Set pricing and availability
+- Submit for approval
 
 3. **Manage Bookings**
    - View incoming bookings
@@ -551,12 +574,13 @@ Options -Indexes
 ### For Administrators
 
 1. **Access Admin Panel**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Login with admin credentials
-   - Navigate to `/admin`
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Login with admin credentials
+- Navigate to `/admin`
 
 2. **Manage Platform**
    - Verify new providers
@@ -572,10 +596,11 @@ Options -Indexes
 ### Core Tables
 
 #### Users Table
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 ```sql
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -590,10 +615,11 @@ CREATE TABLE users (
 ```
 
 #### Providers Table
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 ```sql
 CREATE TABLE providers (
     provider_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -609,10 +635,11 @@ CREATE TABLE providers (
 ```
 
 #### Listings Table
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 ```sql
 CREATE TABLE listings (
     listing_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -629,10 +656,11 @@ CREATE TABLE listings (
 ```
 
 #### Bookings Table
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 ```sql
 CREATE TABLE bookings (
     booking_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -671,54 +699,59 @@ CREATE TABLE bookings (
 ### Implemented Security Measures
 
 1. **Authentication & Authorization**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Password hashing using bcrypt (cost factor: 10)
-   - Session-based authentication
-   - Role-based access control (RBAC)
-   - Session timeout and regeneration
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Password hashing using bcrypt (cost factor: 10)
+- Session-based authentication
+- Role-based access control (RBAC)
+- Session timeout and regeneration
 
 2. **Input Validation & Sanitization**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Server-side validation for all inputs
-   - HTML entity encoding (XSS prevention)
-   - SQL injection prevention via PDO prepared statements
-   - File upload validation (type, size, extension)
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Server-side validation for all inputs
+- HTML entity encoding (XSS prevention)
+- SQL injection prevention via PDO prepared statements
+- File upload validation (type, size, extension)
 
 3. **Database Security**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Prepared statements for all queries
-   - Parameterized queries
-   - Foreign key constraints
-   - Indexed columns for performance
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Prepared statements for all queries
+- Parameterized queries
+- Foreign key constraints
+- Indexed columns for performance
 
 4. **File Security**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Upload directory outside web root (recommended)
-   - File type validation
-   - File size limits
-   - Unique filename generation
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Upload directory outside web root (recommended)
+- File type validation
+- File size limits
+- Unique filename generation
 
 5. **Session Security**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
-   - Secure session configuration
-   - HttpOnly cookies
-   - Session regeneration on login
-   - Session timeout
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
+- Secure session configuration
+- HttpOnly cookies
+- Session regeneration on login
+- Session timeout
 
 6. **Additional Measures**
    - CSRF token implementation (structure ready)
@@ -903,10 +936,11 @@ A: The core features are complete. Additional security hardening and email integ
 ## 🎯 Roadmap
 
 ### Version 1.1 (Planned)
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - [ ] Email notification system
 - [ ] Payment gateway integration
 - [ ] Advanced analytics dashboard
@@ -914,10 +948,11 @@ A: The core features are complete. Additional security hardening and email integ
 - [ ] Multi-language support
 
 ### Version 1.2 (Future)
-<<<<<<< HEAD
-=======
 
->>>>>>> e3dd9e9 (Initial import of TripEase)
+# <<<<<<< HEAD
+
+> > > > > > > e3dd9e9 (Initial import of TripEase)
+
 - [ ] AI-powered recommendations
 - [ ] Chat system (real-time)
 - [ ] Calendar synchronization
