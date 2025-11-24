@@ -1,0 +1,83 @@
+name: Database Backup
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  backup-database:
+    name: Backup Production Database
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install MySQL client
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mysql-client
+
+      - name: Create database backup
+        env:
+          DB_HOST: ${{ secrets.PRODUCTION_DB_HOST }}
+          DB_NAME: ${{ secrets.PRODUCTION_DB_NAME }}
+          DB_USER: ${{ secrets.PRODUCTION_DB_USER }}
+          DB_PASS: ${{ secrets.PRODUCTION_DB_PASS }}
+        run: |
+          BACKUP_DATE=$(date +%Y-%m-%d-%H-%M-%S)
+          BACKUP_FILE="tripease-backup-${BACKUP_DATE}.sql"
+
+          echo "Creating backup: ${BACKUP_FILE}"
+          mysqldump -h ${DB_HOST} -u ${DB_USER} -p${DB_PASS} ${DB_NAME} > ${BACKUP_FILE}
+
+          # Compress backup
+          gzip ${BACKUP_FILE}
+
+          echo "Backup created successfully"
+
+      - name: Upload to S3/Cloud Storage
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          S3_BUCKET: ${{ secrets.S3_BACKUP_BUCKET }}
+        run: |
+          # Install AWS CLI
+          pip install awscli
+
+          # Upload to S3
+          BACKUP_DATE=$(date +%Y-%m-%d-%H-%M-%S)
+          aws s3 cp tripease-backup-${BACKUP_DATE}.sql.gz s3://${S3_BUCKET}/backups/
+
+          echo "Backup uploaded to S3"
+
+      - name: Clean old backups (keep last 30 days)
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          S3_BUCKET: ${{ secrets.S3_BACKUP_BUCKET }}
+        run: |
+          # Delete backups older than 30 days
+          CUTOFF_DATE=$(date -d '30 days ago' +%Y-%m-%d)
+          aws s3 ls s3://${S3_BUCKET}/backups/ | while read -r line; do
+            FILE_DATE=$(echo $line | awk '{print $1}')
+            FILE_NAME=$(echo $line | awk '{print $4}')
+            if [[ "$FILE_DATE" < "$CUTOFF_DATE" ]]; then
+              aws s3 rm s3://${S3_BUCKET}/backups/${FILE_NAME}
+              echo "Deleted old backup: ${FILE_NAME}"
+            fi
+          done
+
+      - name: Notify backup status
+        if: always()
+        continue-on-error: true
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          text: "Database backup ${{ job.status }}"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}

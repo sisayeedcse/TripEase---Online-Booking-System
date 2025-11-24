@@ -1,0 +1,69 @@
+name: Automated Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  code-review:
+    name: Code Review Bot
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "7.4"
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Run PHP Static Analysis
+        run: |
+          # Check for common issues
+          echo "🔍 Analyzing PHP code..."
+
+          # Check for var_dump, die, exit
+          if grep -rn "var_dump\|die(\|exit(" --include="*.php" --exclude-dir=vendor .; then
+            echo "⚠️ Found debug statements (var_dump/die/exit)"
+            exit 1
+          fi
+
+          # Check for short PHP tags
+          if grep -rn "<?[^p=]" --include="*.php" --exclude-dir=vendor .; then
+            echo "⚠️ Found short PHP tags"
+          fi
+
+          echo "✅ Code analysis passed"
+
+      - name: Check file permissions
+        run: |
+          echo "🔐 Checking file permissions..."
+          find . -name "*.php" -perm /111 -not -path "./vendor/*" && echo "⚠️ PHP files should not be executable" || echo "✅ Permissions OK"
+
+      - name: Check SQL injection patterns
+        run: |
+          echo "🔒 Checking for SQL injection vulnerabilities..."
+          ! grep -rn '\$.*SELECT\|INSERT.*\$\|UPDATE.*\$\|DELETE.*\$' --include="*.php" --exclude-dir=vendor . | grep -v "prepare\|quote" || echo "⚠️ Potential SQL injection found"
+
+      - name: Check for TODO comments
+        run: |
+          echo "📝 Finding TODO comments..."
+          grep -rn "TODO\|FIXME\|HACK" --include="*.php" --exclude-dir=vendor . || echo "✅ No TODOs found"
+
+      - name: Comment PR with findings
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🤖 Automated code review completed! Check the Actions tab for detailed results.'
+            })

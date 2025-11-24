@@ -1,0 +1,371 @@
+# TripEase - Git Ignore File
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# IDE & Editor Files
+# ============================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# PhpStorm / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+sftp-config.json
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+bh_unicode_properties.cache
+
+# Notepad++
+nppBackup/
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ============================================
+# PHP & Composer
+# ============================================
+
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# PHP
+*.php~
+*.php.bak
+*.php.swp
+.phpunit.result.cache
+phpunit.xml.bak
+
+# PHP CS Fixer
+.php_cs.cache
+.php-cs-fixer.cache
+
+# PHPStan
+.phpstan.neon
+
+# ============================================
+# Node.js & NPM
+# ============================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# ============================================
+# Environment & Configuration
+# ============================================
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuration files with sensitive data
+config/database.local.php
+config/config.local.php
+config/secrets.php
+
+# ============================================
+# Upload & Cache Directories
+# ============================================
+
+# User uploads (keep directory structure)
+/uploads/users/*
+!/uploads/users/.gitkeep
+/uploads/providers/*
+!/uploads/providers/.gitkeep
+/uploads/listings/*
+!/uploads/listings/.gitkeep
+/uploads/screenshots/*
+!/uploads/screenshots/.gitkeep
+
+# Cache directories
+/cache/
+/tmp/
+/temp/
+*.cache
+
+# ============================================
+# Logs
+# ============================================
+
+# Log files
+*.log
+logs/
+error.log
+access.log
+debug.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+php_errors.log
+apache_errors.log
+
+# ============================================
+# Database
+# ============================================
+
+# Database files
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+!database/schema.sql
+!database/demo-data.sql
+
+# Database dumps
+dump.sql
+backup.sql
+*.sql.gz
+*.sql.zip
+
+# ============================================
+# Build & Distribution
+# ============================================
+
+# Build directories
+/build/
+/dist/
+/public/build/
+
+# Build artifacts
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+build-info.txt
+
+# ============================================
+# Testing
+# ============================================
+
+# Test coverage
+/coverage/
+/tests/coverage/
+/.phpunit.cache
+clover.xml
+coverage.xml
+*.coveragerc
+
+# Test results
+/tests/results/
+junit.xml
+
+# ============================================
+# Backup Files
+# ============================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*~
+.save
+.backup
+
+# ============================================
+# Documentation (Generated)
+# ============================================
+
+# Generated documentation
+/docs/api/
+/docs/generated/
+/phpdoc/
+
+# ============================================
+# Package Managers
+# ============================================
+
+# Bower
+bower_components/
+
+# PEAR
+.buildpath
+
+# ============================================
+# Server Configuration
+# ============================================
+
+# Apache
+.htaccess.local
+.htpasswd
+
+# Nginx
+nginx.conf.local
+
+# ============================================
+# Dependency Directories
+# ============================================
+
+# PEAR packages
+/pear/
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ============================================
+# Compiled & Minified Files
+# ============================================
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Minified files
+*.min.js
+*.min.css
+
+# ============================================
+# Miscellaneous
+# ============================================
+
+# Session files
+sessions/
+*.sess
+
+# Temporary files
+*.tmp
+*.temp
+
+# Lock files
+*.lock
+.lock
+
+# PID files
+*.pid
+
+# Error reports
+error_report.txt
+
+# Debug files
+debug.txt
+debug.log
+
+# TODO files (if you want to keep them private)
+# TODO.md
+# NOTES.md
+
+# ============================================
+# Keep Empty Directories
+# ============================================
+
+# Keep upload directories but ignore their contents
+!uploads/.gitkeep
+!uploads/users/.gitkeep
+!uploads/providers/.gitkeep
+!uploads/listings/.gitkeep
+!uploads/screenshots/.gitkeep
+
+# Keep test result directories
+!tests/results/.gitkeep
+
+# Keep cache directories
+!cache/.gitkeep
+!tmp/.gitkeep
