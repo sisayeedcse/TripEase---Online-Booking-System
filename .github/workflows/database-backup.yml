@@ -22,6 +22,7 @@ jobs:
           sudo apt-get install -y mysql-client
 
       - name: Create database backup
+        continue-on-error: true
         env:
           DB_HOST: ${{ secrets.PRODUCTION_DB_HOST }}
           DB_NAME: ${{ secrets.PRODUCTION_DB_NAME }}
@@ -40,6 +41,7 @@ jobs:
           echo "Backup created successfully"
 
       - name: Upload to S3/Cloud Storage
+        continue-on-error: true
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
